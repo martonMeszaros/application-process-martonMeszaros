@@ -19,6 +19,4 @@ def menu():
             continue
         print()
         correct_input = True
-    if user_input == "0":
-        return False
     return user_input
