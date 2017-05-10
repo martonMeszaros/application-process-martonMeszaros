@@ -30,17 +30,30 @@ def main():
             records = set_records(cur)
             printer.print_table(querries.querries()[0][0], records)
         elif user_input == "2":
-            pass
+            cur.execute(querries.querries()[1][1])
+            records = set_records(cur)
+            printer.print_table(querries.querries()[1][0], records)
         elif user_input == "3":
-            pass
+            cur.execute(querries.querries()[2][1])
+            records = set_records(cur)
+            printer.print_table(querries.querries()[2][0], records)
         elif user_input == "4":
-            pass
+            cur.execute(querries.querries()[3][1])
+            records = set_records(cur)
+            printer.print_table(querries.querries()[3][0], records)
         elif user_input == "5":
-            pass
+            cur.execute(querries.updates()[0])
+            cur.execute(querries.querries()[4][1])
+            records = set_records(cur)
+            printer.print_table(querries.querries()[4][0], records)
         elif user_input == "6":
-            pass
+            cur.execute(querries.updates()[1])
+            cur.execute(querries.querries()[5][1])
+            records = set_records(cur)
+            printer.print_table(querries.querries()[5][0], records)
         elif user_input == "7":
-            pass
+            cur.execute(querries.updates()[2])
+        conn.commit()
 
     cur.close()
     conn.close()
