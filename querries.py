@@ -33,13 +33,13 @@ def querries():
         ],
         [
             ["full_name", "phone_number"],
-            ("SELECT first_name||last_name, phone_number "
+            ("SELECT first_name||' '||last_name, phone_number "
              "FROM applicants "
              "WHERE first_name='Carol';")
         ],
         [
             ["full_name", "phone_number"],
-            ("SELECT first_name||last_name, phone_number "
+            ("SELECT first_name||' '||last_name, phone_number "
              "FROM applicants "
              "WHERE email='%@adipiscingenimmi.edu';")
         ],
