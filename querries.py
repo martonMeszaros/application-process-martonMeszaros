@@ -1,4 +1,8 @@
+"""."""
+
+
 def updates():
+    """."""
     return [
         ("INSERT INTO applicants "
          "(first_name, last_name, phone_number, email, application_code) "
@@ -14,6 +18,7 @@ def updates():
 
 
 def querries():
+    """."""
     return [
         [
             ["first_name", "last_name"],
