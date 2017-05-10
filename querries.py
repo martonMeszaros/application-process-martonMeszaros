@@ -13,7 +13,7 @@ def updates():
          "WHERE first_name='Jemima' AND last_name='Foreman';"),
 
         ("DELETE FROM applicants "
-         "WHERE email='%@mauriseu.net';")
+         "WHERE email LIKE '%@mauriseu.net';")
     ]
 
 
@@ -41,7 +41,7 @@ def querries():
             ["full_name", "phone_number"],
             ("SELECT first_name||' '||last_name, phone_number "
              "FROM applicants "
-             "WHERE email='%@adipiscingenimmi.edu';")
+             "WHERE email LIKE '%@adipiscingenimmi.edu';")
         ],
         [
             ["first_name", "last_name", "phone_number", "email", "application_code"],
