@@ -6,7 +6,7 @@ def updates():
     return [
         ("INSERT INTO applicants "
          "(first_name, last_name, phone_number, email, application_code) "
-         "VALUES (Markus, Schaffarzyk, 003620/725-2666, djnovus@groovecoverage.com, 54823);"),
+         "VALUES ('Markus', 'Schaffarzyk', '003620/725-2666', 'djnovus@groovecoverage.com', '54823');"),
 
         ("UPDATE applicants "
          "SET phone_number='003670/223-7459' "
@@ -44,7 +44,7 @@ def querries():
              "WHERE email LIKE '%@adipiscingenimmi.edu';")
         ],
         [
-            ["first_name", "last_name", "phone_number", "email", "application_code"],
+            ["ID", "first_name", "last_name", "phone_number", "email", "application_code"],
             ("SELECT * "
              "FROM applicants "
              "WHERE application_code='54823';")
