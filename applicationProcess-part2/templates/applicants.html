@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Applicants</title>
+  <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Appliction Code</th>
+      <th>Creation Date</th>
+    </tr>
+    {% if query %}
+    {% for record in query %}
+    <tr>
+      <td>{{ record[0] }}</td>
+      <td>{{ record[1] }}</td>
+      <td>{{ record[2] }}</td>
+    </tr>
+    {% endfor %}
+    {% endif %}
+  </table>
+</body>
+</html>
